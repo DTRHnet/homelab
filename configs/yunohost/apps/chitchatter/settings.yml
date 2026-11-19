@@ -1,0 +1,20 @@
+_permissions:
+  main:
+    additional_urls: []
+    allowed:
+    - all_users
+    - visitors
+    auth_header: true
+    protected: false
+    show_tile: true
+    url: /
+app: chitchatter
+checksum__etc_nginx_conf.d_dtrh.net.d_chitchatter.conf: c4899793d8e6089d1e52f6852104fe62
+current_revision: 2ddc9019349f38e93e6a01317e9ea5dafa1d35bb
+domain: dtrh.net
+id: chitchatter
+install_dir: /var/www/chitchatter
+install_time: 1795061620
+label: Chitchatter
+nodejs_version: 24.22.3
+path: /

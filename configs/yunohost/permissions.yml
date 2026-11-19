@@ -1,0 +1,8 @@
+mail:
+  allowed:
+  - all_users
+sftp:
+  allowed: []
+ssh:
+  allowed:
+  - dtrhnet

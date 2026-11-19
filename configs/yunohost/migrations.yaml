@@ -1,0 +1,10 @@
+migrations:
+  0027_migrate_to_bookworm: skipped
+  0028_delete_legacy_xmpp_permission: skipped
+  0029_postgresql_13_to_15: skipped
+  0030_rebuild_python_venv_in_bookworm: skipped
+  0031_terms_of_services: skipped
+  0032_firewall_config: done
+  0033_rework_permission_infos: done
+  0034_fix_missing_admins_aliases: done
+  0035_fix_apps_nodejs_version: done

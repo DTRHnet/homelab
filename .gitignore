@@ -1,0 +1,42 @@
+# Secrets & Credentials
+configs/cloudflared/*.json
+configs/cloudflared/token
+configs/yunohost/*.pem
+configs/yunohost/.admin_cookie_secret
+configs/yunohost/.ssowat_cookie_secret
+configs/yunohost/letsencrypt_account.pem
+
+# Certificates & Keys
+configs/yunohost/certs/**/*.pem
+configs/yunohost/certs/**/*.key
+*.pem
+*.key
+
+# Environment & Tokens
+*.token
+.env
+.cf_token
+
+# Archives
+*.tar.gz
+*.zip
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+*.out
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log*

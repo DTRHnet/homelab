@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BunnyBox — Homelab Launcher</title>
+  <link rel="icon" type="image/png" href="../logo/bunnybox-logo-32.png" />
+  <link rel="stylesheet" href="../css/bunnybox.css" />
+  <style>
+    /* Inline SVG icons for the demo (same as /icons) */
+    .icon { width: 28px; height: 28px; }
+  </style>
+</head>
+<body>
+  <div class="bb-app">
+
+    <!-- Header -->
+    <header class="bb-header">
+      <div class="bb-brand">
+        <img src="../logo/bunnybox-logo-64.png" alt="BunnyBox" class="bb-logo" />
+        <div class="bb-brand-text">
+          <div class="bb-brand-name">BunnyBox</div>
+          <div class="bb-brand-sub">Homelab Launcher</div>
+        </div>
+      </div>
+      <div class="bb-header-right">
+        <span><span class="bb-status-dot"></span>ACTIVE</span>
+        <span class="bb-mono">22:14:07 UTC</span>
+      </div>
+    </header>
+
+    <!-- Access banner -->
+    <div class="bb-access">
+      <div class="bb-access-title">Access Granted // Welcome Deeper</div>
+    </div>
+
+    <!-- Search -->
+    <div class="bb-search-wrap">
+      <input type="search" class="bb-search" placeholder="Search modules..." />
+    </div>
+
+    <!-- App grid -->
+    <main class="bb-grid">
+
+      <article class="bb-card" onclick="location.href='#'">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/>
+            <circle cx="12" cy="12" r="1.5" fill="#00F0FF"/>
+            <line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">Network Recon</h3>
+        <p class="bb-card-desc">External surface discovery and enumeration</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">RUNNING</span>
+          <span class="bb-uptime">02:14:37</span>
+        </div>
+      </article>
+
+      <article class="bb-card">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <path d="M9 3h6v7l4 9H5l4-9V3z"/><line x1="9" y1="3" x2="15" y2="3"/><path d="M8 14h8"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">Exploit Lab</h3>
+        <p class="bb-card-desc">Exploit development and testing environment</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">RUNNING</span>
+          <span class="bb-uptime">04:11:33</span>
+        </div>
+      </article>
+
+      <article class="bb-card">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/>
+            <path d="M12 11l8-4.5"/><path d="M12 11v9"/><path d="M12 11L4 6.5"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">BunnyBox Core</h3>
+        <p class="bb-card-desc">System management and control plane</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">RUNNING</span>
+          <span class="bb-uptime">17d 04h</span>
+        </div>
+      </article>
+
+      <article class="bb-card">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <rect x="3" y="6" width="18" height="14" rx="2"/>
+            <path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/>
+            <circle cx="12" cy="13" r="2"/><path d="M12 15v2"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">Vault</h3>
+        <p class="bb-card-desc">Credential and secret management</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">LOCKED</span>
+          <span class="bb-uptime">—</span>
+        </div>
+      </article>
+
+      <article class="bb-card">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <polyline points="3 14 7 10 11 13 16 6 21 10"/>
+            <line x1="3" y1="20" x2="21" y2="20"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">Monitoring</h3>
+        <p class="bb-card-desc">Metrics, logs and telemetry</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">RUNNING</span>
+          <span class="bb-uptime">02:38:55</span>
+        </div>
+      </article>
+
+      <article class="bb-card">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <path d="M4 12c0-4 3-7 8-7s8 3 8 7-3 7-8 7-8-3-8-7z"/>
+            <path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5-1.5 3.5-4 3.5-4-1.5-4-3.5z"/>
+            <circle cx="12" cy="12" r="1" fill="#00F0FF"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">Tunnel</h3>
+        <p class="bb-card-desc">Secure access and SOCKS5 proxy</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">RUNNING</span>
+          <span class="bb-uptime">01:56:44</span>
+        </div>
+      </article>
+
+      <article class="bb-card">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/>
+            <circle cx="12" cy="12" r="1.5" fill="#00F0FF"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">app-dtrh-pentest</h3>
+        <p class="bb-card-desc">Dedicated application penetration testing</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">RUNNING</span>
+          <span class="bb-uptime">03:05:18</span>
+        </div>
+      </article>
+
+      <article class="bb-card">
+        <div class="bb-card-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="1.5">
+            <path d="M12 4c-1.5 0-3 1.5-3 4 0 1.5.5 2.5 1 3.5L8 18h8l-2-6.5c.5-1 1-2 1-3.5 0-2.5-1.5-4-3-4z"/>
+            <circle cx="10.5" cy="9" r="0.8" fill="#00F0FF"/>
+          </svg>
+        </div>
+        <h3 class="bb-card-title">Rabbit Hole</h3>
+        <p class="bb-card-desc">Deep access portal and jump host</p>
+        <div class="bb-card-meta">
+          <span class="bb-status">RUNNING</span>
+          <span class="bb-uptime">00:45:12</span>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Footer status -->
+    <footer class="bb-footer">
+      <div class="bb-footer-section">
+        <h4>System Integrity</h4>
+        <div class="bb-integrity">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          ALL SYSTEMS SECURE
+        </div>
+        <div style="margin-top:0.4rem;color:var(--bb-text-dim);font-family:var(--bb-mono);font-size:0.7rem;">
+          Last check 10:24:53 UTC · Signature verified
+        </div>
+      </div>
+
+      <div class="bb-footer-section">
+        <h4>Recent Activity</h4>
+        <ul class="bb-activity-list">
+          <li><span class="time">10:24:31</span> <span class="dot">•</span> Authentication successful</li>
+          <li><span class="time">10:23:47</span> <span class="dot">•</span> Access level elevated</li>
+          <li><span class="time">10:22:19</span> <span class="dot">•</span> Lab environment initialized</li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

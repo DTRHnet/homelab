@@ -1,0 +1,51 @@
+router_forwarding_upnp: false
+tcp:
+  22:
+    comment: ''
+    open: true
+    upnp: true
+  25:
+    comment: ''
+    open: true
+    upnp: true
+  53:
+    comment: Manually set without comment
+    open: false
+    upnp: false
+  80:
+    comment: ''
+    open: true
+    upnp: true
+  443:
+    comment: ''
+    open: true
+    upnp: true
+  587:
+    comment: ''
+    open: true
+    upnp: true
+  993:
+    comment: ''
+    open: true
+    upnp: true
+  5222:
+    comment: ''
+    open: true
+    upnp: true
+  5269:
+    comment: ''
+    open: true
+    upnp: true
+udp:
+  53:
+    comment: ''
+    open: false
+    upnp: false
+  784:
+    comment: adguardhome dns_over_quic
+    open: false
+    upnp: false
+  5353:
+    comment: ''
+    open: true
+    upnp: false

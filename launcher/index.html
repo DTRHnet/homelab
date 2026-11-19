@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="BunnyBox — Homelab Launcher" />
+  <title>BunnyBox — Homelab Launcher</title>
+  <link rel="icon" type="image/png" href="assets/logo/bunnybox-logo-32.png" />
+  <link rel="apple-touch-icon" href="assets/logo/bunnybox-logo-192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/bunnybox.css" />
+  <style>
+    /* Inline SVG icons for the launcher */
+    .icon { width: 28px; height: 28px; }
+  </style>
+</head>
+<body>
+  <div class="bb-app">
+
+    <!-- Header -->
+    <header class="bb-header">
+      <div class="bb-brand">
+        <img src="assets/logo/bunnybox-logo-64.png" alt="BunnyBox" class="bb-logo" />
+        <div class="bb-brand-text">
+          <div class="bb-brand-name">BunnyBox</div>
+          <div class="bb-brand-sub">Homelab Launcher</div>
+        </div>
+      </div>
+      <div class="bb-header-right">
+        <span><span class="bb-status-dot"></span>ACTIVE</span>
+        <span class="bb-mono" id="bb-clock">--:--:-- UTC</span>
+      </div>
+    </header>
+
+    <!-- Access banner -->
+    <div class="bb-access">
+      <div class="bb-access-title">Access Granted // Welcome Deeper</div>
+    </div>
+
+    <!-- Search -->
+    <div class="bb-search-wrap">
+      <input type="search" class="bb-search" id="bb-search" placeholder="Search modules..." autocomplete="off" />
+    </div>
+
+    <!-- App grid -->
+    <main class="bb-grid" id="bb-grid">
+      <!-- Cards will be rendered by JS -->
+    </main>
+
+    <!-- Footer status -->
+    <footer class="bb-footer">
+      <div class="bb-footer-section">
+        <h4>System Integrity</h4>
+        <div class="bb-integrity">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          ALL SYSTEMS SECURE
+        </div>
+        <div style="margin-top:0.4rem;color:var(--bb-text-dim);font-family:var(--bb-mono);font-size:0.7rem;">
+          Last check <span id="bb-last-check">--:--:--</span> UTC · Signature verified
+        </div>
+      </div>
+
+      <div class="bb-footer-section">
+        <h4>Recent Activity</h4>
+        <ul class="bb-activity-list" id="bb-activity">
+          <li><span class="time">--:--:--</span> <span class="dot">•</span> Initializing...</li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/launcher.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+tunnel: c7ec7205-d780-4715-bb05-a15149dcffd3
+credentials-file: /etc/cloudflared/c7ec7205-d780-4715-bb05-a15149dcffd3.json
+ingress:
+  # bunnybox.dtrh.net redirect to dtrhnet.cloudflareaccess.com
+  - hostname: bunnybox.dtrh.net
+    service: http://localhost:8082
+    originRequest:
+      noTLSVerify: true
+  
+  # Pentest Harness - forward to nginx on 8081 which strips /pentest prefix
+  - hostname: app.dtrh.net
+    path: /pentest/*
+    service: http://localhost:8081
+    originRequest:
+      noTLSVerify: true
+  
+  # Catch-all for app.dtrh.net - redirect to Yunohost SSO
+  - hostname: app.dtrh.net
+    service: http://localhost:8083
+    originRequest:
+      noTLSVerify: true
+  
+  # 404 for unmatched
+  - service: http_status:404

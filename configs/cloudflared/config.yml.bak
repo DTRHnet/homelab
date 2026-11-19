@@ -1,0 +1,19 @@
+tunnel: fcf01562-cf36-40bc-98cf-0053b3700d6a
+ingress:
+  - hostname: lab.dtrh.net
+    service: http://localhost:80
+    originRequest:
+      noTLSVerify: true
+      httpHostHeader: lab.dtrh.net
+  - hostname: lab.dtrh.net
+    path: /pentest/*
+    service: http://localhost:8080
+    originRequest:
+      noTLSVerify: true
+      httpHostHeader: lab.dtrh.net
+  - hostname: lab.dtrh.net
+    service: https://localhost:443
+    originRequest:
+      noTLSVerify: true
+      httpHostHeader: lab.dtrh.net
+  - service: http_status:404

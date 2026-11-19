@@ -1,0 +1,22 @@
+{
+    "apps": {
+        "chitchatter.main": {
+            "description": {
+                "en": "Peer-to-peer chat that is serverless, decentralized, and ephemeral",
+                "fr": "Chat peer-to-peer sans serveur, d\u00e9centralis\u00e9e et \u00e9ph\u00e9m\u00e8re"
+            },
+            "label": "Chitchatter",
+            "logo": "/yunohost/sso/applogos/f64a86749831c4959f77632b7ec3c34a0245c81e72337cfe8c1cb7d55c47d3dc.png",
+            "order": 100,
+            "public": true,
+            "url": "dtrh.net",
+            "users": [
+                "anne",
+                "dtrhnet"
+            ]
+        }
+    },
+    "portal_allow_edit_email": false,
+    "portal_allow_edit_email_alias": true,
+    "portal_allow_edit_email_forward": true
+}

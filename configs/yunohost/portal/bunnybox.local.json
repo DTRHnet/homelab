@@ -1,0 +1,6 @@
+{
+    "apps": {},
+    "portal_allow_edit_email": false,
+    "portal_allow_edit_email_alias": true,
+    "portal_allow_edit_email_forward": true
+}

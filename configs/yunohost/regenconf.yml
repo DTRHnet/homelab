@@ -1,0 +1,118 @@
+apt:
+  conffiles:
+    /etc/apt/preferences.d/ban_packages: c700d4913aa9031484891b266366b481
+    /etc/apt/preferences.d/extra_php_version: d5e2d203d8faaa549da97e8cc1e73566
+    /etc/apt/preferences.d/yarn: a9df6139036b5cf0627ffa5bda703f40
+    /etc/apt/sources.list.d/extra_php_version.list: 7f1870cf1c3a85fc91a095cdf4f20c76
+    /etc/apt/sources.list.d/yarn.list: e62f2b32b34ed8bf8b2abf92b2df8ff7
+dnsmasq:
+  conffiles:
+    /etc/default/dnsmasq: ff5c2923b4d5e1e51ffd8d226c26fe2b
+    /etc/dnsmasq.conf: f6169186574137a7817ca51c2677be41
+    /etc/dnsmasq.d/app.dtrh.net: 26d1acbd60746725e658069895d5057f
+    /etc/dnsmasq.d/bunnybox.dtrh.net: 157bfca41909326e3ae3cbe1664391bf
+    /etc/dnsmasq.d/dtrh.net: 15a7a3548f3a0187913e5367c4cbb978
+    /etc/dnsmasq.d/lab.dtrh.net: 9e48b1fe3afe8089a8b88dd8791906e7
+    /etc/dnsmasq.d/pentest.lab.dtrh.net: bed04ce304f18fc7d2390310374d5f1e
+    /etc/dnsmasq.d/spamhaus: 995344ada07cfe1366cb97f03b4a066b
+    /etc/resolv.dnsmasq.conf: 2653adcaecaeeefc1ceca71b4c18a9ad
+dovecot:
+  conffiles:
+    /etc/dovecot/dovecot-ldap.conf: f3fec990f5deb2121d0420fbfb4f4101
+    /etc/dovecot/dovecot.conf: eb94fc28170adcafc350ff911a6a5e95
+    /etc/dovecot/global_script/dovecot.sieve: f6c923affd80d9fda418dbf93664717c
+    /etc/dovecot/yunohost.d/post-ext.conf: 714bdbe482b6130f817db02bb96f3770
+    /etc/dovecot/yunohost.d/pre-ext.conf: 0f6216e006ef1be6ca7d7fc23ca91992
+fail2ban:
+  conffiles:
+    /etc/fail2ban/filter.d/postfix-sasl.conf: f5b8c01c318e6b5e906020fdf5c0fd16
+    /etc/fail2ban/filter.d/yunohost-portal.conf: 1b1521b5967618f420b1fddefb03e523
+    /etc/fail2ban/filter.d/yunohost.conf: 9fcaa5785707a0d24b4e0dec57c6ea2f
+    /etc/fail2ban/jail.conf: 8c85a62c15e758037193f17443f545f9
+    /etc/fail2ban/jail.d/yunohost-jails.conf: d76e32cbcdef53f99e7f53f390e399d8
+    /etc/systemd/system/fail2ban.service.d/systemd-override-bind-nftables.conf: 1739f274fff54c9e965c77ccf93ecb77
+mdns:
+  conffiles:
+    /etc/systemd/system/yunomdns.service: 0c08ef242c09941d39ff453aa613073d
+    /etc/yunohost/mdns.yml: 1a1d891c5d76ced858b0526c635b857f
+nftables:
+  conffiles:
+    /etc/nftables.conf: c07e67701b1cd52ebd1216b573186d2f
+    /etc/nftables.d/yunohost-firewall.conf: 38319054e202cbcd68c0e0c368e77ce7
+nginx:
+  conffiles:
+    /etc/nginx/conf.d/acme-challenge.conf.inc: f4128306d1ec66220bdc5b82678f38be
+    /etc/nginx/conf.d/app.dtrh.net.conf: d580f66ddd9cf04135530c3c45e63417
+    /etc/nginx/conf.d/bunnybox.dtrh.net.conf: 8507779b1d85aa8eca80e375d798bea7
+    /etc/nginx/conf.d/bunnybox.local.conf: 031dd59de7d27e7d334891a7a3e7077d
+    /etc/nginx/conf.d/default.d/redirect_to_admin.conf: 4e76f06e083d460d15aeeac8f106b4d9
+    /etc/nginx/conf.d/dtrh.net.conf: 8fa596e66f5e91f35cc19962a99758d3
+    /etc/nginx/conf.d/global.conf: f8c8721f10d718546b2735080770d307
+    /etc/nginx/conf.d/lab.dtrh.net.conf: 913589e5c5aeeac28981d4d1f9164a96
+    /etc/nginx/conf.d/pentest.lab.dtrh.net.conf: e6eb1552dcbafc5eef41cdb53d1ce324
+    /etc/nginx/conf.d/security.conf.inc: 01846f35c865bbd9982c2771b28944c1
+    /etc/nginx/conf.d/ssowat.conf: 88f0941db4a897c214f34a0661db890d
+    /etc/nginx/conf.d/yunohost_admin.conf: b5516d9fcdec5f28ee0e00feb0a482c2
+    /etc/nginx/conf.d/yunohost_admin.conf.inc: e50af8d763f22816f75e6d2f5955f14c
+    /etc/nginx/conf.d/yunohost_api.conf.inc: 3fdc3bfef07456c8e1c2c77c2991a9dd
+    /etc/nginx/conf.d/yunohost_http_errors.conf.inc: 7bd05c30c115a0101d1fd37e66fca33d
+    /etc/nginx/conf.d/yunohost_panel.conf.inc: dd0a6a0abc3acbc5702b3e2efbd572da
+    /etc/nginx/conf.d/yunohost_sso.conf.inc: 0bdddaca3afea81a35a2193099b6d175
+    /etc/nginx/fastcgi_params_no_auth: 04bcc8f4732d03456809a682e8eb0471
+    /etc/nginx/fastcgi_params_with_auth: 75f33ea0a2ec3b60331b3ffa3b380ec5
+    /etc/nginx/proxy_params_no_auth: 6337aaf2aa0e30a2448b0cda6e7869f2
+    /etc/nginx/proxy_params_with_auth: 90640440823c83e7af332445837b8be4
+    /var/www/.well-known/app.dtrh.net/autoconfig/mail/config-v1.1.xml: 56cfd2647922f5aff69d94a744389217
+    /var/www/.well-known/bunnybox.dtrh.net/autoconfig/mail/config-v1.1.xml: 5a0064558c154e438b079b10c0f7e6c3
+    /var/www/.well-known/bunnybox.local/autoconfig/mail/config-v1.1.xml: 3c4fe90f6c10017f3395e064f627c97f
+    /var/www/.well-known/dtrh.net/autoconfig/mail/config-v1.1.xml: 699cc494edd4135c231942383738f8a8
+    /var/www/.well-known/lab.dtrh.net/autoconfig/mail/config-v1.1.xml: f933079c07147d6a91c349a1d3acbfb8
+    /var/www/.well-known/pentest.lab.dtrh.net/autoconfig/mail/config-v1.1.xml: 7585e48575f22975b1203023dc3603f3
+nslcd:
+  conffiles:
+    /etc/nslcd.conf: e8bd1e22e7b91e60ebe5b1701e159437
+nsswitch:
+  conffiles:
+    /etc/nsswitch.conf: 4e541356b947dd940aa7548c77bfe415
+opendkim:
+  conffiles:
+    /etc/opendkim.conf: b18a206de9e880227a7fad96765f01a1
+postfix:
+  conffiles:
+    /etc/default/postsrsd: e8f66b24a9fd2a8f0231cab96de4fccb
+    /etc/postfix/header_checks: 80a29f033d979766873a0bd90f5a6542
+    /etc/postfix/ldap-accounts.cf: 301af4a3fa12e43fffa4216ffda0f2b2
+    /etc/postfix/ldap-aliases.cf: 8712ccd28e11fda276abd34e8ce85b5a
+    /etc/postfix/ldap-groups.cf: 1cf2c66289db19475443b83d10a3f3eb
+    /etc/postfix/main.cf: 88b23708c422d021bc27a8a9ae0f8fd3
+    /etc/postfix/master.cf: c32bf9a7d37a33b45a93d08e5fdbe1e2
+    /etc/postfix/sender_canonical: 6af7cba824e4a563ec6d7d786f891e2f
+    /etc/postfix/smtp_reply_filter: ff0bbf5d75d5e4096733c51d7745d924
+    /etc/postfix/sni: afe4d960137a6990ebb697f49ee8c383
+    /etc/postfix/virtual-mailbox-domains: 25676413912d24d68805d4a3e751fe9a
+slapd:
+  conffiles:
+    /etc/default/slapd: c4c46a3895fbe17fc731cbc18bc0595f
+    /etc/ldap/ldap.conf: 8e8b048fb294294cee014cb6738b2a08
+    /etc/ldap/schema/mailserver.ldif: 2f674feacb9c8395438a5d21da38d290
+    /etc/ldap/schema/permission.ldif: a5972b630cb2ce988fcead8b173ef0e5
+    /etc/ldap/schema/sudo.ldif: 4d02ae0c33cdf847b84c0a1d505ddd73
+    /etc/systemd/system/slapd.service.d/ynh-override.conf: c2441b545c3d43c735f631250fb38305
+ssh:
+  conffiles:
+    /etc/ssh/sshd_config: 21cd11d9d6175838cb9059471598ce01
+ssl:
+  conffiles:
+    /usr/share/yunohost/ssl/openssl.cnf: 580a8ad4538b67e0512ad2624bce4b28
+yunohost:
+  conffiles:
+    /etc/cron.d/yunohost-diagnosis: c86768dea989cce283f1bfce7c372ef5
+    /etc/cron.daily/yunohost-certificate-renew: ae74efd8ca119096c494e1acba683117
+    /etc/cron.daily/yunohost-fetch-apps-catalog: 0f28124b1e0886795943fab9294e6f50
+    /etc/dpkg/origins/yunohost: 54a72c77e761bafbc3a11b040d8ab266
+    /etc/systemd/logind.conf.d/ynh-override.conf: fe9b22c808448846ae36b050e5ac5f83
+    /etc/systemd/system/nftables.service.d/yunohost-nftables-hooks.conf: 9532a924a4f5d35de0d2a93d68903369
+    /etc/systemd/system/proc-hidepid.service: a3d2f1732a9eb23e7dd93bca2d7e6cec
+    /etc/systemd/system/yunohost-api.service: 1b33d6458bca4e280e15aa37ff52234b
+    /etc/systemd/system/yunohost-portal-api.service: 7386eca71de2740850b924e4f210b998
+    /etc/systemd/system/yunoprompt.service: 70e12fece55b2e8e9e95ab8903392f14

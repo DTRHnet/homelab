@@ -1,0 +1,46 @@
+{
+  "name": "BunnyBox — Homelab Launcher",
+  "short_name": "BunnyBox",
+  "description": "Dark minimal launcher for dtrh.net homelab infrastructure",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/logo/bunnybox-logo-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo/bunnybox-logo-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo/bunnybox-logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo/bunnybox-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Pentest Harness",
+      "url": "https://app.dtrh.net/pentest/",
+      "description": "Open Pentest Harness"
+    },
+    {
+      "name": "Yunohost SSO",
+      "url": "https://app.dtrh.net/yunohost",
+      "description": "Open Yunohost portal"
+    }
+  ]
+}

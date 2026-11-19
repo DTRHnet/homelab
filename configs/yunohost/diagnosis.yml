@@ -1,0 +1,4 @@
+ignore_filters:
+  dnsrecords: []
+  ip:
+  - test: ipv6

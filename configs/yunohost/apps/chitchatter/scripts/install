@@ -1,0 +1,45 @@
+#!/bin/bash
+
+source _common.sh
+source /usr/share/yunohost/helpers
+
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression "Setting up source files..."
+
+mkdir -p "$install_dir"
+chown -R $app:www-data "$install_dir"
+
+git config --system --add safe.directory $install_dir
+
+# Download, check integrity, uncompress and patch the source from GitHub
+git clone https://github.com/jeremyckahn/chitchatter "$install_dir" --quiet
+
+pushd "$install_dir"
+	git reset --hard --quiet $version_commit
+popd
+
+#=================================================
+# NGINX CONFIGURATION
+#=================================================
+ynh_script_progression "Configuring NGINX web server..."
+
+ynh_config_add_nginx
+
+#=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression "Configuring the app..."
+
+pushd $install_dir
+	ynh_hide_warnings npm install -g npm@latest serve
+	ynh_hide_warnings npm install
+	ynh_hide_warnings npm run build
+popd
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
+ynh_script_progression "Installation of $app completed"
