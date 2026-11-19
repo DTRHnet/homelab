@@ -78,6 +78,16 @@ const APPS = [
     category: 'offensive'
   },
   {
+    id: 'searxng',
+    title: 'SearXNG',
+    desc: 'Privacy-respecting metasearch engine',
+    url: 'https://app.dtrh.net/searxng/',
+    icon: 'icon-monitoring.svg',
+    status: 'running',
+    uptime: 'Live',
+    category: 'security'
+  },
+  {
     id: 'settings',
     title: 'Settings',
     desc: 'Launcher configuration and preferences',
