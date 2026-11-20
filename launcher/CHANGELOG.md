@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PWA manifest for installable experience
 - SVG icon system loaded dynamically from assets
 - Category tagging for future filtering
+- Preview screenshot (`assets/images/launcher.jpg`) wired in as Open Graph / Twitter preview image
 
 ### Infrastructure
 - Configured for Cloudflare Tunnel `app-dtrh` integration
